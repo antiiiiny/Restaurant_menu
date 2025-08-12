@@ -6,6 +6,50 @@ body {
       background-position: center;
       color: #fff;
     }
+    .navbar {
+        background-color: rgba(0, 0, 0, 0.8); /* translucent black */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        font-family: Arial, sans-serif;
+    }
+
+    .navbar-inner {
+        max-width: 1100px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .navbar .logo {
+        color: white;
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        gap: 25px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover,
+    .navbar ul li a:focus {
+        color: orange;
+    }
+
 
     .menu-container {
       background-color: rgba(0, 0, 0, 0.75);
@@ -69,4 +113,36 @@ body {
 
     .section {
     padding: 80px 20px;
+}
+.footer {
+    background-color: rgba(0, 0, 0, 0.8); /* translucent black matching navbar */
+    color: white;
+    padding: 40px 20px 20px;
+    font-family: Arial, sans-serif;
+}
+.footer-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer-left, .footer-right {
+    flex: 1;
+    min-width: 280px;
+}
+.footer-left h3, .footer-right h3 {
+    color: orange;
+    margin-bottom: 15px;
+}
+.footer-left p, .footer-right p {
+    margin: 5px 0;
+}
+.footer-bottom {
+    background-color: black;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 0.9em;
 }
